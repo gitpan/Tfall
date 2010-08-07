@@ -23,6 +23,7 @@ lib/Tfall/HTML/Template.pm
 lib/Tfall/Template/Declare.pm
 lib/Tfall/Template/Semantic.pm
 lib/Tfall/Text/MicroMason.pm
+lib/Tfall/Text/MicroTemplate/Extended.pm
 lib/Tfall/Text/MicroTemplate/File.pm
 lib/Tfall/Text/Xslate.pm
 lib/Tfall/TT.pm
@@ -39,6 +40,7 @@ t/020_templates/06_ts.t
 t/020_templates/07_mason.t
 t/020_templates/08_xslate.t
 t/020_templates/09_template_declare.t
+t/020_templates/10_tmte.t
 t/tmpl/foo.haml
 t/tmpl/foo.ht
 t/tmpl/foo.mason
