@@ -1,0 +1,6 @@
+MANIFEST
+Makefile
+inc/
+.c
+ppport.h
+*.sw[po]

@@ -1,0 +1,58 @@
+# NAME
+
+Tfall - Generic interface for Perl5 template engines.
+
+# SYNOPSIS
+
+    use Tfall::Text::Xslate;
+
+    my $tmpl = Tfall::Text::Xslate->new();
+    $tmpl->render(\'Hello, <: $name :>', {name => 'John'});
+    # => "Hello, John"
+
+# DESCRIPTION
+
+Tfall is generic interface for Perl5 template engines.
+
+# The Tfall Protocol
+
+The Tfall protocol is based on duck typing.
+
+- my $tfall = Tfall::Thing->new(@args);
+
+The module SHOULD have __new__ method.
+
+This method creates new instance of Tfall module.
+
+@args should pass to the constructor of template engine.
+
+- $tmpl->render($stuff, @args);
+
+The module SHOULD have __render__ method.
+
+This method rendering template with @args.
+
+If template engine found any errors, this method MUST throw exception.
+
+If the template engine throws any exceptions, Tfall module SHOULD pass through.
+
+__$stuff__ SHOULD allows Str for filename. And the module MAY allows ScalarRef for text.
+
+# HOW TO USE IT IN MY WEB APPLICATION FRAMEWORK?
+
+Example code is here: eg/sinatraish/.
+
+# AUTHOR
+
+Tokuhiro Matsuno <tokuhirom AAJKLFJEF GMAIL COM>
+
+# SEE ALSO
+
+[Any::Template](http://search.cpan.org/perldoc?Any::Template), <http://github.com/rtomayko/tilt>
+
+# LICENSE
+
+Copyright (C) Tokuhiro Matsuno
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
