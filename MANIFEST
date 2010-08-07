@@ -20,11 +20,10 @@ inc/Test/Requires.pm
 inc/YAML.pm
 lib/Tfall.pm
 lib/Tfall/HTML/Template.pm
+lib/Tfall/Template/Declare.pm
 lib/Tfall/Template/Semantic.pm
-lib/Tfall/Text/Markdown.pm
 lib/Tfall/Text/MicroMason.pm
 lib/Tfall/Text/MicroTemplate/File.pm
-lib/Tfall/Text/Sass.pm
 lib/Tfall/Text/Xslate.pm
 lib/Tfall/TT.pm
 lib/Tfall/Util.pm
@@ -36,11 +35,10 @@ t/00_compile.t
 t/020_templates/01_tt.t
 t/020_templates/02_ht.t
 t/020_templates/03_mtf.t
-t/020_templates/04_mkdn.t
-t/020_templates/05_sass.t
 t/020_templates/06_ts.t
 t/020_templates/07_mason.t
 t/020_templates/08_xslate.t
+t/020_templates/09_template_declare.t
 t/tmpl/foo.haml
 t/tmpl/foo.ht
 t/tmpl/foo.mason
