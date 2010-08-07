@@ -2,7 +2,7 @@ package Tfall;
 use strict;
 use warnings;
 use 5.00800;
-our $VERSION = '0.01_03';
+our $VERSION = '0.01_04';
 
 1;
 __END__
@@ -50,6 +50,8 @@ If template engine found any errors, this method MUST throw exception.
 If the template engine throws any exceptions, Tfall module SHOULD pass through.
 
 B<$stuff> SHOULD allows Str for filename. And the module MAY allows ScalarRef for text.
+
+This method MUST return plain string. Do not return blessed reference.
 
 =back
 
